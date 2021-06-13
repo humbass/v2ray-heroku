@@ -21,13 +21,17 @@ cat << EOF > /usr/local/etc/v2ray/config.json
             "settings": {
                 "clients": [
                     {
-                        "id": "$UUID"
+                        "id": "$UUID",
+                        "email": "test@google.com"
                     }
                 ],
                 "decryption": "none"
             },
             "streamSettings": {
-                "network": "ws"
+                "network": "ws",
+                "wsSettings": {
+                    "path": "/33685"
+                }
             }
         }
     ],
